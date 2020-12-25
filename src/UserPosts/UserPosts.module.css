@@ -1,4 +1,9 @@
-.UserPosts {
+.Posts {
     display: flex;
-    
+    flex-direction: column;
+    padding: 0px 100px;
+}
+
+.Posts > div {
+    margin-bottom: 30px;
 }

@@ -1,0 +1,18 @@
+.PostHeader {
+    display: flex;
+    align-items: center;
+}
+
+.Avatar {
+    background-color: lightslategray;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.Post {
+    background-color: lightslategray;
+    height: 250px;
+    margin-top: 10px;
+}

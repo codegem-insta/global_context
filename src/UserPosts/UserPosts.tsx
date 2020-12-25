@@ -1,6 +1,8 @@
 import React from 'react';
 import UserPost from './UserPost/UserPost';
 
+import style from './UserPosts.module.css';
+
 export interface UserPostModel {
     id: number;
     username: string;
@@ -11,7 +13,7 @@ function UserPosts() {
     const userPosts = getUserPosts();
 
     return (
-        <div>
+        <div className={style.Posts}>
             {userPosts.map(post => <UserPost key={post.id} post={post} />)}
         </div>
     );
