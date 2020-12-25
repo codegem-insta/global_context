@@ -1,0 +1,32 @@
+.Layout {
+    display: flex;
+    width: 100%;
+    background-color: moccasin;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.Layout div {
+    border: 1px solid black;
+}
+
+.Main {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: lightcyan;
+    flex-grow: 1;
+}
+
+.Main > div {
+    padding: 10px;
+}
+
+.Panel {
+    flex-basis: 20%;
+}
+
+.Content {
+    flex-grow: 1;
+}
