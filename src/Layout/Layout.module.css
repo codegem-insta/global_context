@@ -1,7 +1,6 @@
 .Layout {
     display: flex;
     width: 100%;
-    background-color: lightsalmon;
     flex-direction: column;
     height: 100%;
     min-height: 100vh;
@@ -19,11 +18,10 @@
 }
 
 .Panel {
-    background-color: lightgreen;
+    background-color: lightgray;
     flex-basis: 20%;
 }
 
 .Content {
-    background-color: lightskyblue;
     flex-grow: 1;
 }
