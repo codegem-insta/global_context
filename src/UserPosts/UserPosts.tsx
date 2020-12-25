@@ -24,7 +24,7 @@ function getUserPosts(): UserPostModel[] {
     return [
         { id: 0, username: "Michael Scott", color: "Blue" },
         { id: 1, username: "John Snow", color: "Green" },
-        { id: 2, username: "Hank", color: "Red" },
+        { id: 2, username: "Homer Simpson", color: "Red" },
         { id: 3, username: "Walter White", color: "Blue" }
     ];
 }
