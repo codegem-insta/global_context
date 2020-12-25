@@ -1,10 +1,13 @@
 import React from 'react';
 import style from './Layout.module.css';
 
+import Header from './Header/Header';
+
 /**
- * Line 25 uses a Destructured Parameter Type, 
- * where on the right side you see the object (in this case it is React.PropsWithChildren<{}>)
- * and on the left side you see the object's propreties listed in curly braces after a comma { children }
+ * Line 27 uses a Destructured Parameter Type where on the right side you 
+ * see the object (in this case it is React.PropsWithChildren<{}>)
+ * and on the left side you see the object's propreties listed 
+ * in curly braces after a comma { children }
  * 
  * We could write this in a different way as well:
  * 
@@ -25,7 +28,7 @@ import style from './Layout.module.css';
 function Layout({ children }: React.PropsWithChildren<{}>) {
     return (
         <div className={style.Layout}>
-            <div>Header</div>
+            <Header />
             <div className={style.Main}>
                 <div className={style.Panel}>Panel</div>
                 <div className={style.Content}>Content</div>
