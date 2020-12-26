@@ -2,31 +2,20 @@
     display: flex;
     align-items: center;
 
-    width: 48px;
+    width: 45px;
     height: 25px;
 
     border-radius: 12px;
     
     cursor: pointer;
     margin-right: 10px;
+}
 
-    /* ON */
-    background-color: #00B1F7;
+.ToggleON {
+    background-color: #00B1F7;    
 }
 
 .ToggleOFF {
-    display: flex;
-    align-items: center;
-    
-    width: 48px;
-    height: 25px;
-    
-    border-radius: 12px;
-    
-    cursor: pointer;
-    margin-right: 10px;
-    
-    /* OFF */
     background-color: #A3A5A6;
     justify-content: flex-end;
 }
