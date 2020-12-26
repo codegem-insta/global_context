@@ -1,0 +1,47 @@
+.Toggle {
+    display: flex;
+    align-items: center;
+
+    width: 48px;
+    height: 25px;
+
+    border-radius: 12px;
+    
+    cursor: pointer;
+    margin-right: 10px;
+
+    /* ON */
+    background-color: #00B1F7;
+}
+
+.ToggleOFF {
+    display: flex;
+    align-items: center;
+    
+    width: 48px;
+    height: 25px;
+    
+    border-radius: 12px;
+    
+    cursor: pointer;
+    margin-right: 10px;
+    
+    /* OFF */
+    background-color: #A3A5A6;
+    justify-content: flex-end;
+}
+
+.Internal {
+    margin-left: 4px;
+    margin-right: 4px;
+
+    width: 19px;
+    height: 19px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.Main {
+    display: flex;
+    align-items: center;
+}
