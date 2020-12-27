@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import BluePostsContext from '../Context/context';
+import { BluePostsContext } from '../Context/context';
 import UserPost from './UserPost/UserPost';
 
 import style from './UserPosts.module.css';
