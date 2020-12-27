@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Layout.module.css';
 
 import Header from './Header/Header';
+import Panel from '../Panel/Panel';
 
 /**
  * Line 27 uses a Destructured Parameter Type where on the right side you 
@@ -30,28 +31,19 @@ function Layout({ children }: React.PropsWithChildren<{}>) {
         <div className={style.Layout}>
             <Header />
             <div className={style.Main}>
-                <div className={style.Panel}>{
+                <div className={style.Panel}>
                     
-                    filterChildren(children, (_, index) => index === 1) // get second child
+                    <Panel />
+
+                </div>
+                <div className={style.Content}>
+                    
+                    {children}
                 
-                }</div>
-                <div className={style.Content}>{
-                
-                    filterChildren(children, (_, index) => index === 0) // get first child
-                
-                }</div>
+                </div>
             </div>
         </div>
     );
-}
-
-// Utility method that loops through a list of children
-// and returns only those which satisfy a condition
-function filterChildren(children: React.ReactNode, condition: (child: React.ReactNode, i: number) => boolean) {
-    return React.Children.map(children, (child, i) => {
-        if (condition(child, i))
-            return child;
-    });
 }
 
 export default Layout;
