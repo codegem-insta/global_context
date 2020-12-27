@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-// In this file we are going to create a context for 
-// holding information about whether to show Blue Posts
-// or not.
+// Here we are creating a context to hold a `React State`. 
+// If you check the type of a react state for a boolean state
+// it is a pair of `boolean` and `React.Dispatch<React.SetStateAction<boolean>>`.
+//
+// We have to also add a default value of [true, value => { }].
 
-const BluePostsContext = React.createContext(true); // we are showing by default
+const BluePostsContext = React.createContext<[boolean, React.Dispatch<React.SetStateAction<boolean>>]>([true, value => { }]);
 
-// Issue with this design: the data can only travel from this point down
-// but it cannot go back up. So we need to add a state mechanism that can 
-// be updated at any time.
+// This provider wraps a component and holds a state via useState.
 
-export function bluePostsProvider<T = {}>(Component: React.ComponentType<T>, value: boolean) {
-    return (props: T) => (
-        <BluePostsContext.Provider value={value}>
+export function bluePostsProvider<T>(Component: React.ComponentType<T>, defaultValue: boolean) {
+    return (props: T) => {
+        const reactState = useState(defaultValue); // <--- the provider will store the state here
+
+        return (
+        <BluePostsContext.Provider value={reactState}>
             <Component {...props} />
         </BluePostsContext.Provider>
-    );
+        );
+    };
 }
 
 export default BluePostsContext;

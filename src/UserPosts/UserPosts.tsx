@@ -11,7 +11,7 @@ export interface UserPostModel {
 }
 
 function UserPosts() {
-    const showBluePosts = useContext(BluePostsContext);
+    const [showBluePosts] = useContext(BluePostsContext);
     const userPosts = getUserPosts().filter(post => showBluePosts || post.color !== "Blue");
 
     return (

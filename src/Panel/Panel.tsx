@@ -6,8 +6,8 @@ import Toggle from '../Reusable/Toggle/Toggle';
 import style from './Panel.module.css';
 
 function Panel() {
-    const showBluePosts = useContext(BluePostsContext);
-    const onToggle = () => {};
+    const [showBluePosts, setShowBluePosts] = useContext(BluePostsContext);
+    const onToggle = () => setShowBluePosts(oldValue => !oldValue);
 
     return (
         <div className={style.Panel}>
