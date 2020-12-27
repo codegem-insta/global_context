@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import BluePostsContext from '../Context/context';
 import UserPost from './UserPost/UserPost';
 
 import style from './UserPosts.module.css';
@@ -10,7 +11,8 @@ export interface UserPostModel {
 }
 
 function UserPosts() {
-    const userPosts = getUserPosts();
+    const showBluePosts = useContext(BluePostsContext);
+    const userPosts = getUserPosts().filter(post => showBluePosts || post.color !== "Blue");
 
     return (
         <div className={style.Posts}>
