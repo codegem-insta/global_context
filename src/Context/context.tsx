@@ -6,7 +6,11 @@ import React from 'react';
 
 const BluePostsContext = React.createContext(true); // we are showing by default
 
-function bluePostsHOC<T>(Component: React.ComponentClass<T>, value: boolean) {
+// Issue with this design: the data can only travel from this point down
+// but it cannot go back up. So we need to add a state mechanism that can 
+// be updated at any time
+
+export function bluePostsHOC<T>(Component: React.ComponentClass<T>, value: boolean) {
     return (props: T) => (
         <BluePostsContext.Provider value={value}>
             <Component {...props} />
