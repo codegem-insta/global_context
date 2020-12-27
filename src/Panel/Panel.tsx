@@ -5,12 +5,12 @@ import Toggle from '../Reusable/Toggle/Toggle';
 import style from './Panel.module.css';
 
 function Panel() {
-    const [showRedPosts, setShowRedPosts] = useState(true);
-    const onToggle = () => setShowRedPosts(oldValue => !oldValue);
+    const [showBluePosts, setShowBluePosts] = useState(true);
+    const onToggle = () => setShowBluePosts(oldValue => !oldValue);
 
     return (
         <div className={style.Panel}>
-            <Toggle isON={showRedPosts} onToggle={onToggle}>Show blue posts</Toggle>
+            <Toggle isON={showBluePosts} onToggle={onToggle}>Show blue posts</Toggle>
 
            <div>Settings</div>
 
