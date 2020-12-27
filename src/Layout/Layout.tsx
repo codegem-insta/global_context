@@ -3,6 +3,7 @@ import style from './Layout.module.css';
 
 import Header from './Header/Header';
 import Panel from '../Panel/Panel';
+import { bluePostsProvider } from '../Context/context';
 
 function Layout({ children }: React.PropsWithChildren<{}>) {
     return (
@@ -24,4 +25,4 @@ function Layout({ children }: React.PropsWithChildren<{}>) {
     );
 }
 
-export default Layout;
+export default bluePostsProvider<React.PropsWithChildren<{}>>(Layout, true);
