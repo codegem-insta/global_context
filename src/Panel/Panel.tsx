@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import BluePostsContext from '../Context/context';
 
 import Toggle from '../Reusable/Toggle/Toggle';
 
 import style from './Panel.module.css';
 
 function Panel() {
-    const [showBluePosts, setShowBluePosts] = useState(true);
-    const onToggle = () => setShowBluePosts(oldValue => !oldValue);
+    const showBluePosts = useContext(BluePostsContext);
+    const onToggle = () => {};
 
     return (
         <div className={style.Panel}>
