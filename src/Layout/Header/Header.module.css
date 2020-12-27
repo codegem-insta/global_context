@@ -3,3 +3,14 @@
     text-align: center;
     border-bottom: 1px solid lightgray;
 }
+
+.Logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

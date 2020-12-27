@@ -5,7 +5,9 @@ import style from './Header.module.css';
 function Header() {
     return (
         <div className={style.Header}>
-            AwesomeApp
+            <div className={style.Title}>
+                <img className={style.Logo} src={'./logo.png'} alt='Codegem logo'/> AwesomeApp
+            </div>
         </div>
     );
 }
