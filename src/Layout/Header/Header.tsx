@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className={style.Header}>
             <div className={style.Title}>
-                <img className={style.Logo} src={'./logo.png'} alt='Codegem logo'/> AwesomeApp
+                <img className={style.Logo} src={'./logo.png'} alt='Codegem logo'/> YourAwesomeApp
             </div>
         </div>
     );
