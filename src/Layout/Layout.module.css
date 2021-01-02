@@ -18,7 +18,7 @@
 }
 
 .Panel {
-    background-color: lightgray;
+    background-color: rgb(236, 236, 236);
     flex-basis: 20%;
 }
 
