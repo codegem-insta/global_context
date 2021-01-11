@@ -10,8 +10,8 @@ const BluePostsContext = React.createContext<[boolean, React.Dispatch<React.SetS
 
 // This provider wraps a component and holds a state via useState.
 
-export function bluePostsProvider<T>(Component: React.ComponentType<T>, defaultValue: boolean) {
-    return (props: T) => {
+export function bluePostsProvider<Props>(Component: React.ComponentType<Props>, defaultValue: boolean) {
+    return (props: Props) => {
         const reactState = useState(defaultValue); // <--- the provider will store the state here
 
         return (
