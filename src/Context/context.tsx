@@ -1,4 +1,4 @@
-import createGlobalContext from "./globalContext";
+import createGlobalContext from "./globalState";
 
 const [BluePostsContext, BluePostsProvider] = createGlobalContext(true);
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Pair = <L, R>(pair: [L, R]) => pair;
 
-function createGlobalContext<T>(defaultValue: T) {
+function createGlobalState<T>(defaultValue: T) {
     const GlobalContext = React.createContext<[T, React.Dispatch<React.SetStateAction<T>>]>([defaultValue, () => { }]);
 
     function globalProvider<Props>(Component: React.ComponentType<Props>) {
@@ -20,5 +20,5 @@ function createGlobalContext<T>(defaultValue: T) {
     return Pair([GlobalContext, globalProvider]);
 }
 
-export default createGlobalContext;
+export default createGlobalState;
 
