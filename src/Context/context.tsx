@@ -1,5 +1,5 @@
-import createGlobalContext from "./globalState";
+import createGlobalState from "./globalState";
 
-const [BluePostsContext, BluePostsProvider] = createGlobalContext(true);
+const [BluePostsContext, BluePostsProvider] = createGlobalState(true);
 
 export { BluePostsContext, BluePostsProvider };
