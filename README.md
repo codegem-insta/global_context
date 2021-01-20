@@ -4,11 +4,11 @@ This react web app is a demo project for [creating global state without Redux](h
 side panel and a main content with user posts. The side panel has a toggle that should hide/show blue posts in
 the main content area:
 
-<p align="center"><img src="readme/demo.gif" /></p>
+<p align="center"><img src="readme/demo.gif"/></p>
 
 The react component tree looks like this:
 
-<p align="center"><img src="readme/component_tree.png" /></p>
+<p align="center"><img src="readme/component_tree.png" width="50%"/></p>
 
 This repository has 4 different branches:
 
