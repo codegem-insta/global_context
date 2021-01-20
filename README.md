@@ -24,7 +24,7 @@ You can find the copy of [the medium article](https://codegem.medium.com/how-to-
 ---
 ## How to Create Global State in React without Redux (TypeScript)
 
-In this article, we will show you *how* to build a reusable function that lets you create a global state. If you are only interested in how to use it and not the implementation details, jump over to [[Global Context (Use)]].
+In this article, we will show you *how* to build a reusable function that lets you create a global state. If you are only interested in how to use it and not the implementation details, jump over to [this article](https://codegem.medium.com/create-global-state-in-react-as-simply-as-local-state-7b917bb19490).
 
 ## Intro
 In some cases, two components that are not located close to each other in your react component tree need to **share** and **modify** data. For example `Layout` and `UserPosts`:
